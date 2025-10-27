@@ -22,7 +22,6 @@ char	*ft_strlowcase(char *str)
 	{
 		if ((str[i] >= 65 && str[i] <= 90))
 		{
-			str[i] = str[i];
 			str[i] += 32;
 		}
 		i++;
