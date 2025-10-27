@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 17:04:11 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 13:00:27 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/25 23:07:32 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-// int main(void)
-// {
-// 	char str1[] = "ab2cdfhlkbfnh";
-// 	ft_str_is_alpha(str1);
-// }
+/* int main(void)
+{
+	char str1[] = "ab2cdfhlkbfnh";
+	ft_str_is_alpha(str1);
+} */

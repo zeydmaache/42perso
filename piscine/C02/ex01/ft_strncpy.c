@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:00:29 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 11:34:18 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/26 15:03:24 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -31,13 +31,13 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-// int	main()
-// {
-// 	char src[] = "ma source2";
-// 	char dest[] = "mon dest"; // in strncpy you must have dest value
-// 	int n = 9;
+/* int	main()
+{
+	char src[] = "ma source2";
+	char dest[20]; // in strncpy you must have dest value
+	int n = 9;
 
-// 	ft_strncpy(dest, src, n);
-// 	printf("%s\n", dest);
-// 	return (0);
-// }
+	ft_strncpy(dest, src, n);
+	printf("%s\n", dest);
+	return (0);
+} */

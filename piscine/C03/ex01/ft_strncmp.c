@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 15:54:32 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 16:41:06 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/25 23:09:05 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 int ft_strncmp(char *s1, char *s2, unsigned int n)
 {
@@ -28,14 +28,14 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
 	return (0);
 }
 
-// int	main()
-// {
-// 	char	s1[] = "hello";
-// 	char	s2[] = "hello";
-// 	int	n;
+/* int	main()
+{
+	char	s1[] = "hello";
+	char	s2[] = "hello";
+	int	n;
 
-// 	n = 3;
+	n = 3;
 
-// 	printf("%d\n", ft_strncmp(s1, s2, n));
-// 	return (0);
-// }
+	printf("%d\n", ft_strncmp(s1, s2, n));
+	return (0);
+} */

@@ -1,34 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*    ft_strcmp.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:04:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/25 22:54:43 by zmaache          ###   ########.fr       */
+/*   Created: 2025/10/26 12:39:13 by zmaache           #+#    #+#             */
+/*   Updated: 2025/10/26 17:42:31 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
-	{
-		i++;
-	}
-	return (s1[i] - s2[i]);
-}
-/* int	main(void)
-{
-	char	*s1 = "hello";
-	char	*s2 = "hello";
 
-	printf("%d\n", ft_strcmp(s1, s2));
+	if (to_find[0] == '\0')
+	return (str);
+
+	while (str[i] != '\0')
+	{
+		j = 0;
+		while (str[i + j] != '\0' && str[i + j] == to_find[j])
+		{
+			if (to_find[j + 1] == '\0')
+			return (&str[i]);
+			++j;
+		}
+		++i;
+	}
+
+	return (0); 
 }
- */
+
+int	main(void)
+{
+	char *str = "Try to find this part of the text";
+	char *to_find = "this";
+
+	printf("Returned: %s\n", ft_strstr(str, to_find));
+}

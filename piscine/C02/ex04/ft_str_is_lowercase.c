@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 09:24:15 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 11:44:04 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/25 23:07:52 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_str_is_lowercase(char *str)
 {
@@ -29,8 +29,8 @@ int	ft_str_is_lowercase(char *str)
 	return (1);
 }
 
-// int main(void)
-// {
-//     char str[] = "azazejKzsbvjh";
-//     ft_str_is_lowercase(str);
-// }
+/* int main(void)
+{
+    char str[] = "azazejKzsbvjh";
+    ft_str_is_lowercase(str);
+} */

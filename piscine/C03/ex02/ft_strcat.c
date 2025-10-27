@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 14:41:51 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/23 16:28:10 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/26 12:14:53 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,21 @@
 char *ft_strcat(char *dest, char *src)
 {
 	int	i;
-	int	dest_len;
+	int	j;
 
 	i = 0;
-	dest_len = 0;
+	j = 0;
+	
 	while(dest[i] != '\0')
 	{
 		i++;
 	}
-	while(src[dest_len] != '\0')
+	while(src[j] != '\0')
 	{
-		dest[i] = src[i];
+		dest[i] = src[j];
 		i++;
-		dest_len++;
+		j++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return(dest);
 }

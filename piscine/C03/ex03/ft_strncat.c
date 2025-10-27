@@ -1,34 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*    ft_strcmp.c                                       :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:04:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/25 22:54:43 by zmaache          ###   ########.fr       */
+/*   Created: 2025/10/26 12:08:32 by zmaache           #+#    #+#             */
+/*   Updated: 2025/10/26 12:32:17 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 #include <string.h>
 
-int	ft_strcmp(char *s1, char *s2)
+char *ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
+	unsigned	i;
+	unsigned	j;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	j = 0;
+
+	while(dest[i] != '\0')
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	while(j < nb && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return(dest);
 }
+ 
 /* int	main(void)
 {
-	char	*s1 = "hello";
-	char	*s2 = "hello";
+	char	dest[10] = "dest";
+	char	src[10] = "src";
+	int	n = 2;
 
-	printf("%d\n", ft_strcmp(s1, s2));
-}
- */
+	ft_strncat(dest, src, n);
+	printf("%s", dest);
+} */

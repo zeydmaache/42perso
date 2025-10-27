@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 09:22:58 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 12:54:23 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/26 12:08:48 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_str_is_numeric(char *str)
 {
@@ -29,8 +29,8 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-// int main(void)
-// {
-//     char str[] = "azazcejkzsbvjh";
-//     ft_str_is_numeric(str);
-// }
+/* int main(void)
+{
+    char str[] = "azazcejkzsbvjh";
+    ft_str_is_numeric(str);
+} */

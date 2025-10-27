@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 16:50:09 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 11:32:53 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/25 23:07:16 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -27,11 +27,11 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-// int	main(void)
-// {
-// 	char src[] = "Bonjour";//[] ==> for strings
-// 	char dest[7];
+/* int	main(void)
+{
+	char src[] = "Bonjour";//[] ==> for strings
+	char dest[7];
 
-// 	ft_strcpy(dest, src);
-// 	printf("my copy :%s\n", dest);
-// }
+	ft_strcpy(dest, src);
+	printf("my copy :%s\n", dest);
+} */

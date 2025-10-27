@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 10:18:38 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/22 11:48:06 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/26 15:07:52 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-//int main(void)
-//{
-//     char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     ft_strlowcase(str);
-// 	printf("%s\n", str);
+/* int main(void)
+{
+    char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    ft_strlowcase(str);
+	printf("%s\n", str);
 
-// }
+} */
