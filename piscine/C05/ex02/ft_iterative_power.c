@@ -6,13 +6,11 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 16:22:01 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/28 21:49:23 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/30 12:08:40 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int ft_iterative_power(int nb, int power)
+int	ft_iterative_power(int nb, int power)
 {
 	int	res;
 

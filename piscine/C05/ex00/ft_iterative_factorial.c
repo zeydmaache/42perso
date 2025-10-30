@@ -6,11 +6,9 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 15:28:41 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/28 16:07:27 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/30 12:08:29 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_iterative_factorial(int nb)
 {
@@ -18,7 +16,9 @@ int	ft_iterative_factorial(int nb)
 
 	res = 1;
 	if (nb < 0)
-	return (0);
+	{
+		return (0);
+	}
 	while (nb > 1)
 	{
 		res *= nb;

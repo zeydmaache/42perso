@@ -6,13 +6,11 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 16:07:48 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/28 16:20:43 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/30 12:08:35 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int ft_recursive_factorial(int nb)
+int	ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
 		return (0);
