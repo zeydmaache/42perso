@@ -6,12 +6,12 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 12:08:32 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/26 12:32:17 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/27 08:46:45 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <string.h>
+
 
 char *ft_strncat(char *dest, char *src, unsigned int nb)
 {

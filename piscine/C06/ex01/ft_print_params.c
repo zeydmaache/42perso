@@ -1,46 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 14:41:51 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/27 09:00:17 by zmaache          ###   ########.fr       */
+/*   Created: 2025/11/01 14:21:01 by zmaache           #+#    #+#             */
+/*   Updated: 2025/11/01 18:28:40 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-
-char	*ft_strcat(char *dest, char *src)
+int	main(int argc, char **argv)
 {
 	int	i;
-	int	j;
+	int	nb;
 
-	i = 0;
-	j = 0;
-	
-	while(dest[i] != '\0')
+	i = 1;
+	while (i < argc)
 	{
+		nb = 0;
+		while (argv[i][nb] != '\0')
+		{
+			write(1, &argv[i][nb], 1);
+			nb++;
+		}
+		write(1, "\n", 1);
 		i++;
 	}
-	while(src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return(dest);
+	return (0);
 }
-
-/* int	main(void)
-{
-	char	dest[11] = "dest + ";
-	char	src[] = "src";
-
-
-	ft_strncat(dest, src);
-	printf("%s", dest);
-} */

@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 17:38:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/30 12:08:54 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/10/31 07:12:55 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ int	ft_is_prime(int nb)
 	if (nb % 1 == 0)
 		return (1);
 	else
-	return (0);
+		return (0);
 }

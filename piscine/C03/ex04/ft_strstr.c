@@ -5,11 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 12:39:13 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/26 17:42:31 by zmaache          ###   ########.fr       */
+/*   Created: 2025/10/27 08:45:46 by zmaache           #+#    #+#             */
+/*   Updated: 2025/10/27 09:58:19 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -32,14 +33,13 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		++i;
 	}
-
-	return (0); 
+	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char *str = "Try to find this part of the text";
 	char *to_find = "this";
 
 	printf("Returned: %s\n", ft_strstr(str, to_find));
-}
+} */
