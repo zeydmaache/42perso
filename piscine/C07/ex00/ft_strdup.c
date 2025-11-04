@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/29 17:38:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/11/03 19:03:57 by zmaache          ###   ########.fr       */
+/*   Created: 2025/11/03 13:06:03 by zmaache           #+#    #+#             */
+/*   Updated: 2025/11/04 09:49:53 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
-{
-	int	i;
+#include <stdlib.h>
 
-	if (nb <= 1)
-		return (0);
-	i = 2;
-	while (i <= nb / i)
+char	*ft_strdup(char *src)
+{
+	int		len;
+	int		i;
+	char	*copy;
+
+	len = 0;
+	while (src[len] != '\0')
 	{
-		if (nb % i == 0)
-			return (0);
+		len++;
+	}
+	copy = (char *) malloc(sizeof(char) * (len +1));
+	if (copy == NULL)
+	{
+		return (NULL);
+	}
+	i = 0;
+	while (i < len)
+	{
+		copy[i] = src[i];
 		i++;
 	}
-	return (1);
+	copy[i] = '\0';
+	return (copy);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("-7 is prime? %d\n", ft_is_prime(-7));
-	printf("0 is prime? %d\n", ft_is_prime(0));
-	printf("2 is prime? %d\n", ft_is_prime(2));
-	printf("5 is prime? %d\n", ft_is_prime(5));
-	printf("6 is prime? %d\n", ft_is_prime(6));
-} */

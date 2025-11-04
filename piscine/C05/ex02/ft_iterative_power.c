@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 16:22:01 by zmaache           #+#    #+#             */
-/*   Updated: 2025/10/30 12:08:40 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/11/03 18:44:47 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_iterative_power(int nb, int power)
 	{
 		return (1);
 	}
-	while (nb > 1)
+	while (power > 0)
 	{
 		res = res * nb;
 		power--;

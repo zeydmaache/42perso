@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 18:29:54 by zmaache           #+#    #+#             */
-/*   Updated: 2025/11/02 13:28:05 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/11/03 11:27:13 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void	ft_putstr(char *str)
 	}
 }
 
-void	ft_swap(int *a, int *b)
+void	ft_swap(char **a, char **b)
 {
-	int	temp;
+	char	*temp;
 
 	temp = *a;
 	*a = *b;
@@ -47,23 +47,29 @@ void	ft_swap(int *a, int *b)
 
 int	main(int argc, char **argv)
 {
+	int	icnt;
 	int	i;
-	i = 1;
-	if (argc >= 2)
+
+	if (argc > 1)
 	{
-		while (++i < argc - 1)
+		icnt = 1;
+		while (icnt < argc - 1)
 		{
-			if (ft_strcmp(argv[i], argv[i+1]) > 0)
+			if ((ft_strcmp(argv[icnt], argv[icnt + 1]) > 0))
 			{
-				ft_swap(&argv[i], &argv[i + 1]);
-				i = 0;
+				ft_swap(&argv[icnt], &argv[icnt + 1]);
+				icnt = 1;
 			}
+			else
+				icnt++;
 		}
-		i = 0;
-		while (++i < argc)
-		ft_putstr(argv[i]);
+		i = 1;
+		while (i < argc)
+		{
+			ft_putstr(argv[i]);
+			write(1, "\n", 1);
+			i++;
 		}
-		else
-		write(1, "\n", 1);
-		return(0);
+	}
+	return (0);
 }

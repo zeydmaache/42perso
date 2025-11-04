@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/29 17:38:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/11/03 19:03:57 by zmaache          ###   ########.fr       */
+/*   Created: 2025/11/04 08:53:14 by zmaache           #+#    #+#             */
+/*   Updated: 2025/11/04 09:15:17 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
+#include <stdlib.h>
+
+int	*ft_range(int min, int max)
 {
+	int	*chaine;
 	int	i;
 
-	if (nb <= 1)
-		return (0);
-	i = 2;
-	while (i <= nb / i)
+	i = 0;
+	chaine = (int *) malloc(sizeof(int) * ((max - min)));
+	if (min >= max)
+		return (NULL);
+	while (min < max)
 	{
-		if (nb % i == 0)
-			return (0);
+		chaine[i] = min;
 		i++;
+		min++;
 	}
-	return (1);
+	return (chaine);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("-7 is prime? %d\n", ft_is_prime(-7));
-	printf("0 is prime? %d\n", ft_is_prime(0));
-	printf("2 is prime? %d\n", ft_is_prime(2));
-	printf("5 is prime? %d\n", ft_is_prime(5));
-	printf("6 is prime? %d\n", ft_is_prime(6));
-} */

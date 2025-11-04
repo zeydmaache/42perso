@@ -1,37 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/29 17:38:20 by zmaache           #+#    #+#             */
-/*   Updated: 2025/11/03 19:03:57 by zmaache          ###   ########.fr       */
+/*   Created: 2025/11/04 09:16:48 by zmaache           #+#    #+#             */
+/*   Updated: 2025/11/04 09:29:08 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_prime(int nb)
+#include <stdlib.h>
+
+int	ft_ultimate_range(int **range, int min, int max)
 {
+	int	size;
+	int	*temp;
 	int	i;
 
-	if (nb <= 1)
-		return (0);
-	i = 2;
-	while (i <= nb / i)
+	i = 0;
+	size = max - min;
+	temp = (int *) malloc(sizeof(int) * size);
+	if (min >= max)
 	{
-		if (nb % i == 0)
-			return (0);
-		i++;
+		*range = NULL;
+		return (0);
 	}
-	return (1);
+	while (min < max)
+	{
+		temp[i] = min;
+		i++;
+		min++;
+	}
+	*range = temp;
+	return (size);
 }
-/*
-#include <stdio.h>
-int	main(void)
+
+/* int	main(void)
 {
-	printf("-7 is prime? %d\n", ft_is_prime(-7));
-	printf("0 is prime? %d\n", ft_is_prime(0));
-	printf("2 is prime? %d\n", ft_is_prime(2));
-	printf("5 is prime? %d\n", ft_is_prime(5));
-	printf("6 is prime? %d\n", ft_is_prime(6));
+	int	*tableau;
+	int	taille;
+
+	taille = ft_ultimate_range(&tableau, 2, 6);
+	return (0);
 } */
