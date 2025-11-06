@@ -6,7 +6,7 @@
 /*   By: zmaache <zmaache@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:40:23 by zmaache           #+#    #+#             */
-/*   Updated: 2025/11/05 17:11:30 by zmaache          ###   ########.fr       */
+/*   Updated: 2025/11/06 09:22:53 by zmaache          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_all_lenghts(int size, char **strs, char *sep)
+char	*ft_all_len(int size, char **strs, char *sep)
 {
 	int		i;
 	int		sum;
@@ -54,7 +54,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		c;
 	char	*all_;
 
-	all_ = ft_all_lenghts(size, strs, sep);
+	all_ = ft_all_len(size, strs, sep);
 	i = 0;
 	c = 0;
 	while (size > i)
